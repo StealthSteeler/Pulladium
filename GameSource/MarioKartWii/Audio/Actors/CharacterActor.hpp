@@ -38,6 +38,7 @@ class RandomCharacterActorPicker : public RandomSoundPicker { //one per type
 }; //0x30
 
 class CharacterActor : public RaceAnimActor {
+    public:
     CharacterActor(); //80863928
 
     //AUDIOACTOR
@@ -83,7 +84,7 @@ class CharacterActor : public RaceAnimActor {
     bool isGhost; //0x6fc
     bool isReplay; //0x6fd
     u8 unknown_0x6fe;
-    bool unknown_0x6ff;
+    bool hasSound;
     u8 unknown_0x700[8];
     static u32 charactersGroupIds[24]; //808afb58
 }; //0x708

@@ -640,11 +640,20 @@ Load__11ArchiveFileFPCcPQ23EGG4HeapbiPQ23EGG4HeapPQ33EGG7Archive8FileInfo = 0x80
 MountFromRawArchive__11ArchiveFileFPvUiPQ23EGG4Heapb = 0x80518fbc
 Dump__11ArchiveFileFPCcPQ23EGG4Heapi = 0x805190f0
 Unmount__11ArchiveFileFv = 0x805192cc
+ClearArchive__11ArchiveFileFv = 0x80519370
+ClearDump__11ArchiveFileFv = 0x805193c8
+ClearAll__11ArchiveFileFv = 0x80519240
+__ct__14ArchivesHolderFUs = 0x8052a538
 DumpArchive__14ArchivesHolderFPcPQ23EGG4Heap = 0x8052ab6c
 LoadCourseArchive__10ArchiveMgrF8CourseIdPQ23EGG4Heapb = 0x80540760
 GetFile__10ArchiveMgrCF13ArchiveSourcePCcPUi = 0x805411fc
 RequestLoadCourseAsync__10ArchiveMgrF8CourseId = 0x805419ac
+LoadArchive__10ArchiveMgrFUcR11ArchiveFilePCcUiPQ23EGG4Heap = 0x805402c0
+LoadArchive__10ArchiveMgrFUcR14ArchivesHolderPCcPQ23EGG4HeapPQ23EGG4Heap = 0x80540394
 sInstance__10ArchiveMgr = 0x809bd738
+GetKartArchiveFile__10ArchiveMgrCFUcPCcPUi = 0x805413c8
+
+HasArchives__14ArchivesHolderCFv = 0x8052a800
 
 ##SCENE
 GetCurrent__9GameSceneFv = 0x8051bed0
@@ -778,10 +787,14 @@ NextFloatLimited__6RandomFf = 0x805556a8
 ##3D
 #Model Director
 __ct__13ModelDirectorFUiUi = 0x8055b50c
+__ct__19ShadowModelDirectorFUi = 0x805b89f4
 BindBRRES__13ModelDirectorFRQ34nw4r3g3d7ResFile13ArchiveSourcePCc = 0x8055b618
 LoadNoAnm__13ModelDirectorFPCcRQ34nw4r3g3d7ResFileP5Light = 0x8055c2b8
 LinkAnimation__13ModelDirectorFUiRQ34nw4r3g3d7ResFilePCc7AnmTypebPCc13ArchiveSourceUc = 0x8055ddec
+LinkEmptyAnm__13ModelDirectorFUi = 0x8055e274
 UpdateDrawPriority__13ModelDirectorFUi = 0x8055f4c4
+LoadWithAnm__13ModelDirectorFPCcRQ34nw4r3g3d7ResFileP5Light = 0x8055c0e8
+LoadScnMdl1Mat1SHp__13ModelDirectorFPCcRQ34nw4r3g3d7ResFileP5Light = 0x8055c520
 
 #MHModelDirector
 matNames__15MHModelDirector = 0x808d1860
@@ -818,6 +831,8 @@ DeleteMii__8MiiGroupFUc = 0x805faa84
 ##KART
 #KartCollision
 CheckKartCollision__Q24Kart9CollisionFRCQ24Kart6Player = 0x8056f7f0
+ResetParamBins__4KartFv = 0x80591c9c
+paramBins__4Kart = 0x809c1910
 
 #KartBRRESHandle
 __ct__Q24Kart11BRRESHandleFP5LightbUc = 0x80576b3c
@@ -841,10 +856,12 @@ GetPhysicsHolder__Q24Kart4LinkFv = 0x805903ac
 GetPhysicsHolder__Q24Kart4LinkCFv = 0x805903bc
 GetControllerHolder__Q24Kart4LinkCFv = 0x805903f4
 IsLocal__Q24Kart6PlayerCFv = 0x80590650
+IsGhost__Q24Kart4LinkCFv = 0x80590678
 GetWheelPhysicsHolder__Q24Kart4LinkFUi = 0x80590704
 GetStats__Q24Kart4LinkCFv = 0x80590874
 GetType__Q24Kart4LinkCFv = 0x80590a10
 GetPlayerIdx__Q24Kart4LinkCFv = 0x80590a5c
+GetScreenIdx__Q24Kart4LinkCFv = 0x80590e04
 
 #KartPlayer
 GetDriftState__Q24Kart6PlayerCFv = 0x805911d8
@@ -1671,6 +1688,7 @@ sInstance__Q25Audio12SinglePlayer = 0x809c2328
 
 #LinkedRaceActor
 CannotPlaySounds__15LinkedRaceActorFv = 0x807028e4
+Link__Q25Audio15LinkedRaceActorFPvUs = 0x80702714
 
 #EngineMgr
 Init__Q25Audio9EngineMgrFPQ25Audio9KartActor = 0x806fae60

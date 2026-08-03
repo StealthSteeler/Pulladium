@@ -31,7 +31,7 @@ public:
     u8 unknown_0x44[0x4c - 0x44]; //0x44
     EGG::Effect* rk_trophyMetal; //0x4c rk_trophy_gold if metal == gold
     EGG::Effect* rk_trophyGold; //0x50
-    EGG::Effect* rk_trophyGold; //0x54
+    EGG::Effect* rk_trophyGold1; //0x54
     EGG::Effect* rk_trophyCopper; //0x58
     EGG::EffectResource* effRes; //0x5c rk_trophy breff/breft
     u8 unknown_0x60[0x68 - 0x60]; //0x60

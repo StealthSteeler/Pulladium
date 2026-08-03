@@ -20,7 +20,7 @@ enum ArchiveSource {
     ARCHIVE_HOLDER_DRIVER = 0x6, //Driver.szs
     ARCHIVE_HOLDER_AWARD = 0x7,
     ARCHIVE_HOLDER_BACKMODEL = 0x8,
-    ARCHIVE_HOLDER_KART = 0x9
+    ARCHIVE_HOLDER_KART = 0xA,
 };
 
 enum SourceType { //conditions what "suffixes" contains

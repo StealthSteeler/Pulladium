@@ -109,7 +109,7 @@ public:
     virtual void vf_0x5c(); //0x5c 8051b9d0
 
     void FinalizeEnter(); //8051a4dc calls OnEnterEnd
-    void AddArchiveHolder(ArchivesHolder& archive, ArchiveSource source); //88051aa58
+    void AddArchiveHolder(ArchivesHolder& archive, ArchiveSource source); //8051aa58
     void FadeIn(); //8051a41c inlined
     void FadeOutToNewScene(); //8051a480 inlined
     void FadeOutToReinit(); //8051b094
